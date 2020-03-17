@@ -4,7 +4,7 @@ function [dotxhat] = Msd_Kalman_state(xhat,u)
     msd.m = 1;
 
     k = msd.k; m = msd.m; d = msd.d;
-    dotx = zeros(2,1);
-    dotx = [ xhat(2); -d/m*xhat(2)-k/m*xhat(1)-1/m*u];
+    dotxhat = zeros(2,1);
+    dotxhat = [ xhat(2); -d/m*xhat(2)-k/m*xhat(1)-1/m*u];
 end
 
