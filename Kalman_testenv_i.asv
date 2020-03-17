@@ -5,7 +5,7 @@ measnoiseamp = 0.01;
 
 % Variable for choice of Variant Subsystem
 thisMode = 1;
-ToggleVariant; % => thisMode = 0!
+ToggleVariant; % => Tog
 
 % Params VDP
 vdp.mue = 0.2;
