@@ -1,5 +1,6 @@
 Ts = 1e-3;
 
+% Variables for disturbance Config
 measnoiseamp = 0.01;
 
 % Variable for choice of Variant Subsystem
