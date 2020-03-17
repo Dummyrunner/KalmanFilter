@@ -7,6 +7,7 @@ thisMode = 0;
 
 % Params VDP
 vdp.mue = 0.2;
+vdp.x0 = 5;
 
 % Params Mass-Spring-Damper
 msd.k = 1;
