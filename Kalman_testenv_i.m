@@ -16,7 +16,7 @@ msd.k = 1;
 msd.d = 0.2;
 msd.m = 1;
 
-msd.x0 = [5 0];
+msd.x0 = [5; 0];
 
 % Matrix representation of System
 k = msd.k; d=msd.d; m=msd.m;
