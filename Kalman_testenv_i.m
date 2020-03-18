@@ -22,7 +22,7 @@ msd.x0 = [5; 0];
 k = msd.k; d=msd.d; m=msd.m;
 msd.A = [0 1; -k/m -d/m];
 msd.B = [0 1/m]';
-msd.C = [0 1];
+msd.C = [1 0];
 msd.D = 0;
 clear k d m
 
