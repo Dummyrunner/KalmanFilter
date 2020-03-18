@@ -26,7 +26,12 @@ msd.C = [0 1];
 msd.D = 0;
 clear k d m
 
-msd.sysc = ss(msd.A,msd.B,msd.C,msd.D);
+msd_sysc = ss(msd.A,msd.B,msd.C,msd.D);
 % Obtain descrete ss-representation of sys
-msd.sysd = c2d(msd.sysc,Ts);
-[msd.Ad,msd.Bd,msd.Cd,msd.Dd] = ssdata(msd.sysd);
+msd_sysd = c2d(msd_sysc,Ts);
+[msd.Ad,msd.Bd,msd.Cd,msd.Dd] = ssdata(msd_sysd);
+
+% Covariance Parameters
+Q = 0.05;
+R = 1;
+P0 = diag([0.09 1]); % seems to be the standard P0 in standard-Simulink-Kalman-Filter
